@@ -161,7 +161,7 @@ class Commissioned(Classification):
     def __init__(self, emp, salary, commission):
         super().__init__(emp)
         self.salary = salary
-        self.commission = commission
+        self.commission = float(commission) * .01
         self.receipts = []
 
     def issue_payment(self):

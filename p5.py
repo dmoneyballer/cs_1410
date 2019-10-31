@@ -9,7 +9,7 @@ def main():
     run_payroll()
 
     # Save copy of payroll file
-    shutil.copyfile('paylog.txt', 'paylog1.txt')
+    shutil.copyfile('payroll.txt', 'paylog1.txt')
 
     # Change Karina Gay to Salaried and DirectMethod by changing her Employee object:
     emp = find_employee_by_id('688997')
